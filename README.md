@@ -28,7 +28,7 @@ The API provides full CRUD operations for both Products and Makers, including en
 • Maven project management
 • Clean and maintainable structure
 
-#Tech Stack
+# Tech Stack
 
 Technology	Purpose
 Java 17	Core language
@@ -41,7 +41,7 @@ Lombok	Boilerplate reduction
 Maven	Build tool
 
 
-#Architecture
+# Architecture
 
 The application follows a layered architecture, promoting separation of concerns.
 
@@ -57,19 +57,19 @@ Database
 
 Handles HTTP requests and responses.
 
-##Service
+## Service
 
 Contains the business logic and orchestrates repository operations.
 
-##Repository
+## Repository
 
 Handles database communication using Spring Data JPA.
 
-##DTO
+## DTO
 
 Used to expose clean API responses without exposing internal entities.
 
-#Entity Relationship
+# Entity Relationship
 
 The system models a Manufacturer → Products relationship.
 
@@ -99,11 +99,11 @@ name
 price
 maker
 
-#API Endpoints
+# API Endpoints
 
-##Maker Endpoints
+## Maker Endpoints
 
-###Get maker by ID
+### Get maker by ID
 
 GET /api/maker/find/{id}
 
@@ -114,10 +114,10 @@ Response
   "name": "Apple"
 }
 
-###Get all makers
+### Get all makers
 GET /api/maker/findAll
 
-###Create maker
+### Create maker
 POST /api/maker/save
 
 Request body
@@ -126,20 +126,20 @@ Request body
   "name": "Samsung"
 }
 
-###Update maker
+## Update maker
 PUT /api/maker/update/{id}
 
-###Delete maker
+### Delete maker
 DELETE /api/maker/delete/{id}
 
 #Product Endpoints
 
-###Get product by ID
+### Get product by ID
 GET /api/product/find/{id}
 Get all products
 GET /api/product/findAll
 
-###Create product
+### Create product
 POST /api/product/save
 
 Request body
@@ -152,13 +152,13 @@ Request body
   }
 }
 
-###Update product
+### Update product
 PUT /api/product/update/{id}
 
-###Delete product
+### Delete product
 DELETE /api/product/delete/{id}
 
-#Project Structure
+# Project Structure
 src/main/java/com/application/rest
 
 controllers
@@ -183,13 +183,13 @@ service
       └─ ProductServiceImpl
       
 
-#Installation
+# Installation
 
-##1 Clone the repository
+## 1 Clone the repository
 git clone https://github.com/SantiagoCrivellaro/SpringBootRest.git
-##2 Enter the project directory
+## 2 Enter the project directory
 cd SpringBootRest
-##3 Configure the database
+## 3 Configure the database
 
 Update your application.properties:
 
@@ -200,7 +200,7 @@ spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
-#4 Run the project
+# 4 Run the project
 
 Using Maven wrapper
 
@@ -210,7 +210,7 @@ Or on Windows
 
 mvnw.cmd spring-boot:run
 
-#Example Database Schema
+# Example Database Schema
 
 Tables created by Hibernate:
 
@@ -224,7 +224,7 @@ producto
  ├─ precio
  └─ id_fabricante
 
-#Design Principles
+# Design Principles
 
 This project applies several backend design practices:
 
@@ -234,7 +234,7 @@ This project applies several backend design practices:
 • Repository Pattern
 • Clean architecture organization
 
-#Future Improvements
+# Future Improvements
 
 Possible extensions to evolve this project into a production-ready system:
 
@@ -246,7 +246,7 @@ Possible extensions to evolve this project into a production-ready system:
 • Docker containerization
 • Unit and integration tests
 
-#Author
+# Author
 
 Santiago Crivellaro
 
