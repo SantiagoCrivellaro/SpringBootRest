@@ -53,7 +53,7 @@ Repository (DAO) Layer
       ↓
 Database
 
-##Controller
+## Controller
 
 Handles HTTP requests and responses.
 
