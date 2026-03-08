@@ -252,4 +252,4 @@ Santiago Crivellaro
 
 Backend Developer focused on Java, Spring Boot, APIs and distributed systems.
 
-Linkedin : https://www.linkedin.com/in/santiago-crivellaro-a407133b5/
+Linkedin : https://www.linkedin.com/in/santiago-crivellaro-3aa96b3b5/
